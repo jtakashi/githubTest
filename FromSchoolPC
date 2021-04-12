@@ -1,0 +1,34 @@
+
+こんにちはhttps接続でgitcommitしてみました。
+
+
+＃githubのwebサイトから追記
+[remote "origin"]
+ url = https://username:password@github.com/xxxxxx/demo-repo.git
+
+これをgithubTest/.git/config に追記。(似たようなのがはいいてたら書き換え）
+コマンド打ってもいいけどこっちのほうが早い
+
+参考にしたqiita
+  githubにpushする時に勝手に別ユーザでpushされる現象の対処法　
+    https://qiita.com/comefigo/items/8acfc82b1dbbc314d90d
+  //これ調べたらドンピシャ
+  
+  git pushで403エラーが返された話
+    https://qiita.com/F-S/items/6673ad4a5ccef9d84a68
+  //エラーの原因がこれで分かった
+  
+  複数のgitアカウントを使用する場合
+    https://qiita.com/yamataku29/items/4744c9c70ad793c83b82
+  //ssh接続の記事だけど参考になった(ただしちょっと古いやり方かも、、、）
+  
+  複数のgitアカウントを使い分ける
+    https://qiita.com/0084ken/items/f4a8b0fbff135a987fea
+  //よく使うアカウントはグローバル、あまり使わないアカウントはリポジトリごとに登録
+    するというのが参考になった
+    
+ その他
+  ひとまず解決したけれどconfigファイルの中にパスワードそのまま書いてしまってるのが少し気になる
+  でも、configファイルは公開されないので大丈夫なのかもしれない、ほかに方法がないか調べる。
+  気になるなら消してしまおう
+  
